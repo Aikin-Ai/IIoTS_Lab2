@@ -53,6 +53,7 @@
 	  <None Remove="Resources\Images\device_thermostat_black_24dp.svg" />
 	  <None Remove="Resources\Images\fireplace_black_24dp.svg" />
 	  <None Remove="Resources\Images\green_circle_svgrepo_com.svg" />
+	  <None Remove="Resources\Images\pressure_furnace.jpg" />
 	  <None Remove="Resources\Images\red_circle_svgrepo_com.svg" />
 	</ItemGroup>
 

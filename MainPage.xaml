@@ -10,68 +10,83 @@
             Spacing="25"
             VerticalOptions="Center">
 
-            <HorizontalStackLayout HorizontalOptions="End">
-
-                <Label Text="Pressure " VerticalOptions="Center" />
-
-                <Image
-                    HeightRequest="24"
-                    HorizontalOptions="Center"
-                    Source="compress_black_24dp.png"
-                    VerticalOptions="Center" />
-                <Label Text=" :  " VerticalOptions="Center" />
-
-                <ImageButton
-                    x:Name="IconPressureStatus"
-                    Clicked="IconPressureStatus_Clicked"
-                    HeightRequest="48"
-                    HorizontalOptions="Center"
-                    Source="green_circle_svgrepo_com.png"
-                    VerticalOptions="Center" />
-
-            </HorizontalStackLayout>
-
             <HorizontalStackLayout HorizontalOptions="Center">
+                <VerticalStackLayout
+                    Padding="30,0"
+                    Spacing="25"
+                    VerticalOptions="Center">
+                    <HorizontalStackLayout HorizontalOptions="End">
 
-                <Label Text="Temperature " VerticalOptions="Center" />
+                        <Label Text="Pressure " VerticalOptions="Center" />
+
+                        <Image
+                            HeightRequest="24"
+                            HorizontalOptions="Center"
+                            Source="compress_black_24dp.png"
+                            VerticalOptions="Center" />
+                        <Label Text=" :  " VerticalOptions="Center" />
+
+                        <ImageButton
+                            x:Name="IconPressureStatus"
+                            Clicked="IconPressureStatus_Clicked"
+                            HeightRequest="48"
+                            HorizontalOptions="Center"
+                            Source="green_circle_svgrepo_com.png"
+                            VerticalOptions="Center" />
+
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout HorizontalOptions="End">
+
+                        <Label Text="Temperature " VerticalOptions="Center" />
+
+                        <Image
+                            HeightRequest="24"
+                            HorizontalOptions="Center"
+                            Source="device_thermostat_black_24dp.png"
+                            VerticalOptions="Center" />
+                        <Label Text=" :  " VerticalOptions="Center" />
+
+                        <ImageButton
+                            x:Name="IconTemperatureStatus"
+                            Clicked="IconTemperatureStatus_Clicked"
+                            HeightRequest="48"
+                            HorizontalOptions="Center"
+                            Source="green_circle_svgrepo_com.png"
+                            VerticalOptions="Center" />
+
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout HorizontalOptions="End">
+
+                        <Label Text="Fuel Consumption " VerticalOptions="Center" />
+
+                        <Image
+                            HeightRequest="24"
+                            HorizontalOptions="Center"
+                            Source="fireplace_black_24dp.png"
+                            VerticalOptions="Center" />
+                        <Label Text=" :  " VerticalOptions="Center" />
+
+                        <ImageButton
+                            x:Name="IconFuelStatus"
+                            Clicked="IconFuelStatus_Clicked"
+                            HeightRequest="48"
+                            HorizontalOptions="Center"
+                            Source="green_circle_svgrepo_com.png"
+                            VerticalOptions="Center" />
+
+                    </HorizontalStackLayout>
+
+                </VerticalStackLayout>
 
                 <Image
-                    HeightRequest="24"
+                    HeightRequest="240"
                     HorizontalOptions="Center"
-                    Source="device_thermostat_black_24dp.png"
-                    VerticalOptions="Center" />
-                <Label Text=" :  " VerticalOptions="Center" />
-
-                <ImageButton
-                    x:Name="IconTemperatureStatus"
-                    Clicked="IconTemperatureStatus_Clicked"
-                    HeightRequest="48"
-                    HorizontalOptions="Center"
-                    Source="green_circle_svgrepo_com.png"
-                    VerticalOptions="Center" />
+                    Source="pressure_furnace.jpg" />
 
             </HorizontalStackLayout>
 
-            <HorizontalStackLayout HorizontalOptions="Center">
-
-                <Label Text="Fuel Consumption " VerticalOptions="Center" />
-
-                <Image
-                    HeightRequest="24"
-                    HorizontalOptions="Center"
-                    Source="fireplace_black_24dp.png"
-                    VerticalOptions="Center" />
-                <Label Text=" :  " VerticalOptions="Center" />
-
-                <ImageButton
-                    x:Name="IconFuelStatus"
-                    Clicked="IconFuelStatus_Clicked"
-                    HeightRequest="48"
-                    HorizontalOptions="Center"
-                    Source="green_circle_svgrepo_com.png"
-                    VerticalOptions="Center" />
-
-            </HorizontalStackLayout>
 
             <HorizontalStackLayout HorizontalOptions="Center">
 

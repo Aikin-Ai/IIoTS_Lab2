@@ -4,7 +4,6 @@ namespace IIoTS_Lab2;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 	S7ProSim sim = new();
 	bool[] status = { false, false, false };
 
@@ -16,7 +15,7 @@ public partial class MainPage : ContentPage
 
 		InitializeComponent();
 
-		_ = RunInBackground(TimeSpan.FromSeconds(1), () => StatusChecker());
+		_ = RunInBackground(TimeSpan.FromMilliseconds(100), () => StatusChecker());
 	}
 
 	private static async Task RunInBackground(TimeSpan timeSpan, Action action)
