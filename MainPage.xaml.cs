@@ -55,13 +55,13 @@ public partial class MainPage : ContentPage
 	{
 		if (status[0])
 		{
-			sim.WriteInputPoint(0, 0, false);
+			sim.WriteInputPoint(settings.PressureAddress[0], settings.PressureAddress[1], false);
 			IconPressureStatus.Source = "green_circle_svgrepo_com.png";
 			status[0] = false;
 		}
 		else
 		{
-			sim.WriteInputPoint(0, 0, true);
+			sim.WriteInputPoint(settings.PressureAddress[0], settings.PressureAddress[1], true);
 			IconPressureStatus.Source = "red_circle_svgrepo_com.png";
 			status[0] = true;
 		}
@@ -71,13 +71,13 @@ public partial class MainPage : ContentPage
 	{
 		if (status[1])
 		{
-			sim.WriteInputPoint(0, 1, false);
+			sim.WriteInputPoint(settings.TemperatureAddress[0], settings.TemperatureAddress[1], false);
 			IconTemperatureStatus.Source = "green_circle_svgrepo_com.png";
 			status[1] = false;
 		}
 		else
 		{
-			sim.WriteInputPoint(0, 1, true);
+			sim.WriteInputPoint(settings.TemperatureAddress[0], settings.TemperatureAddress[1], true);
 			IconTemperatureStatus.Source = "red_circle_svgrepo_com.png";
 			status[1] = true;
 		}
@@ -87,13 +87,13 @@ public partial class MainPage : ContentPage
 	{
 		if (status[2])
 		{
-			sim.WriteInputPoint(0, 2, false);
+			sim.WriteInputPoint(settings.FuelAddress[0], settings.FuelAddress[1], false);
 			IconFuelStatus.Source = "green_circle_svgrepo_com.png";
 			status[2] = false;
 		}
 		else
 		{
-			sim.WriteInputPoint(0, 2, true);
+			sim.WriteInputPoint(settings.FuelAddress[0], settings.FuelAddress[1], true);
 			IconFuelStatus.Source = "red_circle_svgrepo_com.png";
 			status[2] = true;
 		}
