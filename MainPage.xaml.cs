@@ -6,6 +6,7 @@ public partial class MainPage : ContentPage
 {
 	S7ProSim sim = new();
 	bool[] status = { false, false, false };
+	SettingsPage settings = new();
 
 	public MainPage()
 	{
@@ -31,7 +32,7 @@ public partial class MainPage : ContentPage
 	{
 		label_CPUState.Text = sim.GetState();
 		object pData = new();
-		sim.ReadOutputPoint(0, 0, PointDataTypeConstants.S7_Bit, ref pData);
+		sim.ReadOutputPoint(settings.AlarmAddress[0], settings.AlarmAddress[1], PointDataTypeConstants.S7_Bit, ref pData);
 		bool b = Convert.ToBoolean(pData);
 		if (b)
 		{
@@ -45,9 +46,9 @@ public partial class MainPage : ContentPage
 
 	private void ResetAlarmButton_OnClicked(object sender, EventArgs e)
 	{
-		sim.WriteInputPoint(0, 3, true);
+		sim.WriteInputPoint(settings.ResetAddress[0], settings.ResetAddress[1], true);
 		Thread.Sleep(1000);
-		sim.WriteInputPoint(0, 3, false);
+		sim.WriteInputPoint(settings.ResetAddress[0], settings.ResetAddress[1], false);
 	}
 
 	private void IconPressureStatus_Clicked(object sender, EventArgs e)
@@ -96,6 +97,12 @@ public partial class MainPage : ContentPage
 			IconFuelStatus.Source = "red_circle_svgrepo_com.png";
 			status[2] = true;
 		}
+	}
+
+	private async void SettingsPageButton_Clicked(object sender, EventArgs e)
+	{
+		settings = new();
+		await Navigation.PushAsync(settings);
 	}
 }
 

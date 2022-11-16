@@ -108,6 +108,12 @@
                 HorizontalOptions="Center"
                 Text="Reset Alarm" />
 
+            <Button
+                x:Name="SettingsPageButton"
+                Clicked="SettingsPageButton_Clicked"
+                HorizontalOptions="Center"
+                Text="Settings" />
+
         </VerticalStackLayout>
     </ScrollView>
 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIoTS_Lab2.SettingsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="SettingsPage">
+    <VerticalStackLayout>
+        <HorizontalStackLayout>
+            <Label
+                HorizontalOptions="Center"
+                Text="Pressure: I"
+                VerticalOptions="Center" />
+            <Editor x:Name="PressureAddressEditor" Text="0.0" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label
+                HorizontalOptions="Center"
+                Text="Temperature: I"
+                VerticalOptions="Center" />
+            <Editor x:Name="TemperatureAddressEditor" Text="0.1" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label
+                HorizontalOptions="Center"
+                Text="Fuel: I"
+                VerticalOptions="Center" />
+            <Editor x:Name="FuelAddressEditor" Text="0.2" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label
+                HorizontalOptions="Center"
+                Text="Reset: I"
+                VerticalOptions="Center" />
+            <Editor x:Name="ResetAddressEditor" Text="0.3" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label
+                HorizontalOptions="Center"
+                Text="Alarm: Q"
+                VerticalOptions="Center" />
+            <Editor x:Name="AlarmAddressEditor" Text="0.0" />
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
